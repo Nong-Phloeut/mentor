@@ -2,7 +2,7 @@
 # docker-compose.yml
 services:
   backend:
-    image: mesasmos/mlupdong_backend:latest
+    image: nongdev/mlupdong_backend:latest
     container_name: mlopdong_backend
     restart: always
     networks: [web]
@@ -22,13 +22,13 @@ services:
 
 
   frontend:
-    image: mesasmos/mlupdong_frontend:latest
+    image: nongdev/mlupdong_frontend:latest
     container_name: mlopdong_frontend
     restart: always
     networks: [web]
 
   webserver:
-    image: mesasmos/mlupdong_webserver:latest
+    image: nongdev/mlupdong_webserver:latest
     container_name: mlopdong_webserver
     restart: unless-stopped
     ports: ["80:80", "443:443"]
